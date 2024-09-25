@@ -13,30 +13,34 @@ All float values should be displayed correct to 2 decimal places.
 
 '''
 
-s=int(input ())
-b=int(input ())
-e=int(input ())
-ti=s+b+e
-ps=(s/ti)*100
-pb=(b/ti)*100
-pe=(e/ti)*100
-print("%.2f"%ps,"%.2f"%pb,"%.2f"%pe)
+# Input: Dhoni's income from Salary, Bonuses, and Endorsements
+salary = int(input("Enter Dhoni's income from Salary (in rupees): "))
+bonuses = int(input("Enter Dhoni's income from Bonuses and Awards (in rupees): "))
+endorsements = int(input("Enter Dhoni's income from Endorsements (in rupees): "))
+
+# Calculate total income
+total_income = salary + bonuses + endorsements
+
+# Calculate percentages
+salary_percentage = (salary / total_income) * 100
+bonuses_percentage = (bonuses / total_income) * 100
+endorsements_percentage = (endorsements / total_income) * 100
+
+# Output: percentages formatted to 2 decimal places
+print(f"{salary_percentage:.2f} {bonuses_percentage:.2f} {endorsements_percentage:.2f}")
+
 
 
 
 '''
-output
 
-Input and Output 1:
-100
-20
-80
-50.00 10.00 40.00
-Input and Output2:
-50000
-10000
-35000
-52.63 10.53 36.84
+Enter Dhoni's income from Salary (in rupees): 
+20000000
+Enter Dhoni's income from Bonuses and Awards (in rupees): 
+5000000
+Enter Dhoni's income from Endorsements (in rupees): 
+6000000
+64.52 16.13 19.35
 
 
 '''
