@@ -35,20 +35,19 @@ print(total_extras)
 '''
 
 output
-
-Sample input and output 1:
-4
-7
-3
-10
-3
-39
-Sample input and output 2:
+    
+Number of No-balls:
 2
+Number of Wides:
 3
+Number of Byes:
 7
+Number of Leg-byes:
 1
+Number of Penalty runs:
 17
+98
+
 
 
 '''
