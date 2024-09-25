@@ -11,27 +11,22 @@ Output should display a float that gives the total amount that is needed by Dhon
 
 '''
 
-
-x=float(input())
-y=float(input())
-z=float(input())
-a=(x*z*30)/y
-print("%.2f"%a)
-
+x=float(input("distance of the camp"))
+y=float(input("mileage"))
+z=float(input("cost of petrol"))
+total_amount = (x*z*30)/y
+print(f"total amount :{total_amount:.2f}")
 
 
 '''
 
-output
-
-Input and Output 1:
+    
+distance of the camp
 75
+mileage
 55
+cost of petrol
 63
-2577.27
-Input and Output 2:
-35
-78
-65.0
-875.00
+total amount :2577.27
+
 '''
